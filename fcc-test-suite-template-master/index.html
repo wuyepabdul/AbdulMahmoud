@@ -10,6 +10,16 @@
         body {
           font-size: 22px;
         }
+        .projects-grid {
+          display: grid;
+
+          grid-gap: 4rem;
+          width: 100%;
+          grid-template-columns: repeat(auto-fit, min-max(300px, 1fr));
+          max-width: 1200px;
+          margin: 0 auto;
+          margin-bottom: 30px;
+        }
       }
     </style>
   </head>
@@ -28,9 +38,49 @@
       <h1>Hello World, we are software developers!</h1>
     </section>
 
-    <section id="projects">
-      <h3 class="project-tile"></h3>
-      <a href="#" id="#"></a>
+    <section id="projects" class="project-section">
+      <h3 class="project-title">My Projects</h3>
+      <div class="projects-grid">
+        <a href="">
+          <img
+            class="project-image"
+            src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg"
+        /></a>
+        <a href="#">
+          <img
+            class="project-image"
+            src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png"
+          />
+        </a>
+        <a href="#">
+          <img
+            class="project-image"
+            src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png"
+          />
+        </a>
+        <a href="#">
+          <img
+            class="project-image"
+            src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/map.jpg"
+          />
+        </a>
+        <a href="#">
+          <img
+            class="project-image"
+            src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png"
+          />
+        </a>
+        <a href="#">
+          <img
+            class="project-image"
+            src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tic-tac-toe.png"
+          />
+        </a>
+      </div>
+
+      <a href="#" class="show-button">
+        <button class="button">Show More ></button>
+      </a>
     </section>
 
     <section>
